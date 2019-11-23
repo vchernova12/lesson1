@@ -1,0 +1,4 @@
+def get_summ(one, two, delimiter='&'):
+    text=f'{one} {delimiter} {two}'
+return text
+get_summ("Learn","Python")
