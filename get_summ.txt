@@ -1,0 +1,1 @@
+def get_summ(one, two, delimiter='&')
