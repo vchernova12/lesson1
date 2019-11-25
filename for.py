@@ -12,15 +12,25 @@
 
 def main():
     school=[
-    {'School class':'4A','scores':[3,4,4,5,3,2,5,4,3,4,4]},
+    {'School class':'4A','scores':[5,5,4,5,3,2,5,4,3,5,5]},
     {'School class':'4B','scores':[5,4,4,5,3,3,5,4,4,4,4]},
-    {'School class':'4C','scores':[5,4,4,5,2,2,2,2,5,4,4,4,4]},
-    {'School class':'4C','scores':[3,4,4,3,2,2,3,2,3,4,4,3,4]}]
-    
+    {'School class':'4C','scores':[5,4,4,5,4,2,4,2,5,4,4,4,4]},
+    {'School class':'4C','scores':[3,2,2,3,2,2,3,2,3,2,2,3,2]}]
+    return (school)   
 if __name__ == "__main__":
     school = main()
-score_summ=0
-for school_class in school[0]['scores']:
-    score_summ+=scores
-    print(score_summ)
-#print (score_summ/len(school['scores'])
+
+for number_of_class in range(len(school)):
+    score_summ=0
+    for scores in school[number_of_class]['scores']:
+        score_summ+=scores
+    print (score_summ/len(school[number_of_class]['scores']))
+
+for number_of_class in range(len(school)):
+    score_summ=0
+    for scores in school[number_of_class]['scores']:
+        score_summ+=scores
+    print (score_summ, len(school[number_of_class]['scores']))
+print (sum(score_summ)/sum(len(school[number_of_class]['scores'])))
+
+
