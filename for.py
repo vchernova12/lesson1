@@ -25,12 +25,14 @@ for number_of_class in range(len(school)):
     for scores in school[number_of_class]['scores']:
         score_summ+=scores
     print (score_summ/len(school[number_of_class]['scores']))
-
+score_summ=0
 for number_of_class in range(len(school)):
-    score_summ=0
     for scores in school[number_of_class]['scores']:
         score_summ+=scores
-    print (score_summ, len(school[number_of_class]['scores']))
-print (sum(score_summ)/sum(len(school[number_of_class]['scores'])))
+number_of_students=0
+for number_of_class in range(len(school)):
+    number_of_students+=len(school[number_of_class]['scores'])
+print(score_summ/number_of_students)
+
 
 

@@ -16,17 +16,21 @@
 
 def main():
     user_age=input('Введите Ваш возраст:')
-    user_age=int(user_age)
+    user_age=int(user_age)  
     return user_age
 def life_stage_determinator(age):
-        if age <= 6:
-            return "учится в детском саду"
-        elif 7 <= age < 17:
-            return "учится в  школе"
-        elif 17 <= age <= 22:
-            return "учится в  школе"
-        else:
-            return "работает"
-print(life_stage_determinator(user_age))
-if __name__ == "__main__":
-     main()
+            if age <= 6:
+                return "учится в детском саду"
+            elif 7 <= age < 17:
+                return "учится в  школе"
+            elif 17 <= age <= 22:
+                return "учится в  школе"
+            else:
+                return "работает"
+if __name__ == "__main__": 
+    age = main()
+    life_stage=life_stage_determinator(age)
+print (life_stage)
+
+
+   

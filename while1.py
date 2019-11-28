@@ -11,14 +11,13 @@
 
 
 def ask_user():
-    question=input("Как дела?")
-    return(question) 
+    while True:
+        answer=input("Как дела?")
+        if answer !="Хорошо":
+            ask_user=()
+        else:
+            break
+        
 if __name__ == "__main__":
     answer=ask_user()
-while True:
-    if answer =="Хорошо":
-        break
-    else:
-       ask_user()
-       
 
