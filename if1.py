@@ -15,7 +15,7 @@
 """
 
 def main():
-    user_age=input('Введите Ваш возраст:')
+    user_age=input('Введите Ваш возраст: ')
     user_age=int(user_age)  
     return user_age
 def life_stage_determinator(age):
@@ -24,7 +24,7 @@ def life_stage_determinator(age):
             elif 7 <= age < 17:
                 return "учится в  школе"
             elif 17 <= age <= 22:
-                return "учится в  школе"
+                return "учится в  ВУЗе"
             else:
                 return "работает"
 if __name__ == "__main__": 
