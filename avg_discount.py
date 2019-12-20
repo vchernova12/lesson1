@@ -8,7 +8,7 @@ def avg_discount(discounts, camp_days_in_month,duration):
         for i in range(len(camp_days_in_month)):
             discount_per_month += discounts[i]*camp_days_in_month[i]
         avg_discount = discount_per_month/duration
-    else: raise ValueError ("Не хватет данных")
+    else: raise ValueError ("Не хватает данных")
    
     return (avg_discount)
 if __name__ == "__main__":
